@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="top-bar">
+
+    </div>
+
+
+    <div class="header">
+        <span>UNIT CONVERTER</span>
+    </div>
+
+
+    <div class="converter-tab">
+        <div class="tab-titles">
+            <p class="tab-links active-link length" onclick="opentab('length')">Length</p>
+            <p class="tab-links temperature" onclick="opentab('temperature')">Temperature</p>
+            <p class="tab-links area" onclick="opentab('area')">Area</p>
+            <p class="tab-links volume" onclick="opentab('volume')">Volume</p>
+            <p class="tab-links weight" onclick="opentab('weight')">Weight</p>
+            <p class="tab-links time" onclick="opentab('time')">Time</p>
+        </div>
+
+    </div>
+
+    <!-- length -->
+
+    <div class="mid-section tab-contents active-tab" id="length">
+        <div class="selects">
+            <select id="inputType">
+                <option class="input-option" value="meter">Meter</option>
+                <option class="input-option" value="kilometer">Kilometer</option>
+                <option class="input-option" value="centimeter">Centimeter</option>
+                <option class="input-option" value="milimeter">Milimeter</option>
+                <option class="input-option" value="micrometer">Micrometer</option>
+                <option class="input-option" value="nanometer">Nanometer</option>
+                <option class="input-option" value="mile">Mile</option>
+                <option class="input-option" value="yard">Yard</option>
+                <option class="input-option" value="foot">Foot</option>
+                <option class="input-option" value="inch">Inch</option>
+            </select>
+
+            <select id="resultType">
+                <option class="result-option" value="meter">Meter</option>
+                <option class="result-option" value="kilometer">Kilometer</option>
+                <option class="result-option" value="centimeter">Centimeter</option>
+                <option class="result-option" value="milimeter">Milimeter</option>
+                <option class="result-option" value="micrometer">Micrometer</option>
+                <option class="result-option" value="nanometer">Nanometer</option>
+                <option class="result-option" value="mile">Mile</option>
+                <option class="result-option" value="yard">Yard</option>
+                <option class="result-option" value="foot">Foot</option>
+                <option class="result-option" value="inch">Inch</option>
+
+            </select>
+        </div>
+
+        <div class="inputs">
+            <input type="text" placeholder="Input" id="input">
+            <span id="equal">=</span>
+            <input type="text" placeholder="Result" id="result">
+        </div>
+    </div>
+
+    <!-- temperature  -->
+    <div class="mid-section tab-contents " id="temperature">
+        <div class="selects">
+            <select id="inputTypetemp">
+                <option class="input-option" value="celsius">Celsius</option>
+                <option class="input-option" value="faranheit">Faranheit</option>
+                <option class="input-option" value="kelvin">Kelvin</option>
+
+            </select>
+
+            <select id="resultTypetemp">
+                <option class="result-option" value="celsius">Celsius</option>
+                <option class="result-option" value="faranheit">Faranheit</option>
+                <option class="result-option" value="kelvin">Kelvin</option>
+
+            </select>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Input" id="inputtemp">
+            <span id="equal">=</span>
+            <input type="text" placeholder="Result" id="resulttemp">
+        </div>
+    </div>
+
+    <!-- area  -->
+    <div class="mid-section tab-contents" id="area">
+        <div class="selects">
+            <select id="inputTypea">
+                <option class="input-option" value="sqmeter">Sq. Meter</option>
+                <option class="input-option" value="sqkilometer">Sq. Kilometer</option>
+                <option class="input-option" value="sqcentimeter">Sq. Centimeter</option>
+                <option class="input-option" value="sqmilimeter">Sq. Milimeter</option>
+                <option class="input-option" value="sqmicrometer">Sq. Micrometer</option>
+                <option class="input-option" value="hectare">Hectare</option>
+                <option class="input-option" value="sqmile">Sq. Mile</option>
+                <option class="input-option" value="sqyard">Sq. Yard</option>
+                <option class="input-option" value="sqfoot">Sq. Foot</option>
+                <option class="input-option" value="sqinch">Sq. Inch</option>
+                <option class="input-option" value="acre">Acre</option>
+            </select>
+
+            <select id="resultTypea">
+                <option class="input-option" value="sqmeter">Sq. Meter</option>
+                <option class="input-option" value="sqkilometer">Sq. Kilometer</option>
+                <option class="input-option" value="sqcentimeter">Sq. Centimeter</option>
+                <option class="input-option" value="sqmilimeter">Sq. Milimeter</option>
+                <option class="input-option" value="sqmicrometer">Sq. Micrometer</option>
+                <option class="input-option" value="hectare">Hectare</option>
+                <option class="input-option" value="sqmile">Sq. Mile</option>
+                <option class="input-option" value="sqyard">Sq. Yard</option>
+                <option class="input-option" value="sqfoot">Sq. Foot</option>
+                <option class="input-option" value="sqinch">Sq. Inch</option>
+                <option class="input-option" value="acre">Acre</option>
+            </select>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Input" id="inputa">
+            <span id="equal">=</span>
+            <input type="text" placeholder="Result" id="resulta">
+        </div>
+    </div>
+
+    <!-- volume  -->
+
+    <div class="mid-section tab-contents" id="volume">
+        <div class="selects">
+            <select id="inputTypev">
+                <option class="input-option" value="cumeter">Cu. Meter</option>
+                <option class="input-option" value="cukilometer">Cu. Kilometer</option>
+                <option class="input-option" value="cucentimeter">Cu. Centimeter</option>
+                <option class="input-option" value="cumilimeter">Cu. Milimeter</option>
+                <option class="input-option" value="liter">Liter</option>
+                <option class="input-option" value="mililiter">Mililiter</option>
+                <option class="input-option" value="cumile">Cu. Mile</option>
+                <option class="input-option" value="cuyard">Cu. Yard</option>
+                <option class="input-option" value="cufoot">Cu. Foot</option>
+                <option class="input-option" value="cuinch">Cu. Inch</option>
+            </select>
+
+            <select id="resultTypev">
+                <option class="input-option" value="cumeter">Cu. Meter</option>
+                <option class="input-option" value="cukilometer">Cu. Kilometer</option>
+                <option class="input-option" value="cucentimeter">Cu. Centimeter</option>
+                <option class="input-option" value="cumilimeter">Cu. Milimeter</option>
+                <option class="input-option" value="liter">Liter</option>
+                <option class="input-option" value="mililiter">Mililiter</option>
+                <option class="input-option" value="cumile">Cu. Mile</option>
+                <option class="input-option" value="cuyard">Cu. Yard</option>
+                <option class="input-option" value="cufoot">Cu. Foot</option>
+                <option class="input-option" value="cuinch">Cu. Inch</option>
+            </select>
+
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Input" id="inputv">
+            <span id="equal">=</span>
+            <input type="text" placeholder="Result" id="resultv">
+        </div>
+    </div>
+    <!-- weight -->
+
+    <div class="mid-section tab-contents" id="weight">
+        <div class="selects">
+            <select id="inputTypew">
+                <option class="input-option" value="kilogram">Kilogram</option>
+                <option class="input-option" value="gram">Gram</option>
+                <option class="input-option" value="miligram">Miligram</option>
+                <option class="input-option" value="pound">Pound</option>
+                <option class="input-option" value="carrat">Carrat</option>
+                <option class="input-option" value="amu">AMU</option>
+
+            </select>
+
+            <select id="resultTypew">
+                <option class="input-option" value="kilogram">Kilogram</option>
+                <option class="input-option" value="gram">Gram</option>
+                <option class="input-option" value="miligram">Miligram</option>
+                <option class="input-option" value="pound">Pound</option>
+                <option class="input-option" value="carrat">Carrat</option>
+                <option class="input-option" value="amu">AMU</option>
+
+            </select>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Input" id="inputw">
+            <span id="equal">=</span>
+            <input type="text" placeholder="Result" id="resultw">
+        </div>
+    </div>
+    <!-- time  -->
+
+    <div class="mid-section tab-contents" id="time">
+        <div class="selects">
+            <select id="inputTypetime">
+                <option class="input-option" value="second">Second</option>
+                <option class="input-option" value="milisecond">Milisecond</option>
+                <option class="input-option" value="microsecond">Microsecond</option>
+                <option class="input-option" value="minute">Minute</option>
+                <option class="input-option" value="hour">Hour</option>
+                <option class="input-option" value="day">Day</option>
+
+
+            </select>
+
+            <select id="resultTypetime">
+                <option class="input-option" value="second">Second</option>
+                <option class="input-option" value="milisecond">Milisecond</option>
+                <option class="input-option" value="microsecond">Microsecond</option>
+                <option class="input-option" value="minute">Minute</option>
+                <option class="input-option" value="hour">Hour</option>
+                <option class="input-option" value="day">Day</option>
+
+
+            </select>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Input" id="inputtime">
+            <span id="equal">=</span>
+            <input type="text" placeholder="Result" id="resulttime">
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+    <div class="footer">
+        <span class="copyright">
+            <p>Khilesh Thakur <i class="fa-regular fa-copyright"></i> 2023</p>
+        </span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
